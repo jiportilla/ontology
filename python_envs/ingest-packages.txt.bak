@@ -1,0 +1,40 @@
+# Helps environment.sh set PYTHONPATH
+
+# Common Projects
+/python/base
+
+# Administrative (Task) Projects
+/python/taskmda
+/python/taskadmin
+
+# Data Source (Data) Projects
+/python/datamongo
+/python/datadict
+/python/datagraph
+/python/dataingest
+/python/databp
+/python/datadb2
+/python/datagit
+
+# Natural Language (NLU) Projects
+/python/nlusvc
+/python/nlutext
+/python/nlutag
+/python/nluflows
+/python/nludialog
+
+# Final Output (Cendancy) Projects
+# cendant projects are "ascendancy"
+# they have to do with final results
+/python/cendantdim
+/python/cendalytics
+/python/cendantweb
+
+# Test Regression
+/python/testsuite
+
+# Box API
+/python/boxapi
+
+# Last package needs to have a line feed,
+# so keep this comment to close the line

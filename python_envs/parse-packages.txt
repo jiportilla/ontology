@@ -1,0 +1,7 @@
+# Helps environment.sh set PYTHONPATH
+
+# Common Projects
+/python
+
+# Last package needs to have a line feed,
+# so keep this comment to close the line

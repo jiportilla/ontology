@@ -1,0 +1,47 @@
+name: ont
+channels:
+  - conda-forge
+dependencies:
+  - beautifulsoup4=4.8.0   # html and xml parser
+  - click=7.0              # command line interface helper
+  - cryptography=2.7       # for encrypting passwords in the environment
+  - flask=1.1.1            # webserver for REST interfaces
+  - jsonpickle=1.2         # serialization of JSON to file
+  - nb_conda
+  - networkx=2.4
+  - nltk=3.4               # natural language toolkit
+  - openpyxl=2.6.2         # read/write excel for reporting
+  - pandas=0.23.4          # pandas data structure
+  - pymongo=3.9.0          # driver for MongoDB
+  - pytest-xdist=1.30      # Run unit tests in parallel
+  - pytest=5.2             # Run unit tests
+  - PyYAML=5.1.2           # yaml parsing
+  - redis-py=3.3.8         # caching database and framework
+  - requests=2.22          # nice http client. Used to post to slack
+  - rq=1.1                 # A task queue
+  - seaborn=0.9.0          # for Jupyter visualizations
+  - spacy=2.0.12
+  - sqlalchemy=1.3.4
+  - tabulate=0.8.3         # pretty-print pandas dataframes
+  - textacy=0.7.0
+  - xlrd=1.2.0             # for excel support
+  - xmltodict=0.12.0       # convenience utils for xml manipulation
+  - pip
+  - pip:
+      - boxsdk==2.6.1             # for read/write to Box
+      - connexion==2.4.0          # allow python to use Swagger spec
+      - flask_restplus==0.13.0    # auto-gen interactive documentation using Swagger UI
+      - fuzzywuzzy==0.17.0        # fuzzy matching of text
+      - graphviz==0.11.1          # create visual graphs in Jupyter. Available in other versions in conda as python-graphviz
+      - ibm_db==3.0.1             # conda package broken
+      - ibm-db-sa==0.3.5          # sqlalchemy interface to DB2
+      - kubernetes==10.0.1        # kubernetes client
+      - openpyxl==2.6.2           # read/write excel for reporting
+      - py2neo==4.3.0             # driver for Neo Graph db
+      - PyGithub==1.43.8          # access github repos and issues
+      - python-dotenv==0.10.3     # add .env support to flask
+      - rdflib==4.2.2             # driver for RDF graph db
+      - slackclient               # driver for Slack API access
+      - swagger-ui-bundle==0.0.6  # swagger-ui as a python package
+      - textblob==0.15.3          # simple NLP capabilities
+      - wikipedia==1.4.0          # offers Wikipedia API access
