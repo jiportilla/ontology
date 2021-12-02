@@ -1,0 +1,1 @@
+from .perform_education_analysis import PerformEducationAnalysis

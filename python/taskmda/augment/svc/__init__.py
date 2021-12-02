@@ -1,0 +1,3 @@
+from .add_dbpedia_redirects import AddDBPediaRedirects
+from .add_language_variability import AddLanguageVariability
+from .add_ontology_entries import AddOntologyEntries

@@ -1,0 +1,1 @@
+from .education_analysis_api import EducationAnalysisAPI

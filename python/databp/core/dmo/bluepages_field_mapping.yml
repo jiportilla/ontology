@@ -1,0 +1,79 @@
+CNUM:
+  label: serial_number
+  case: upper
+XPHONE:
+  label: phone_number
+  case: None
+NAME:
+  label: name
+  case: None
+DEPT:
+  label: department
+  case: upper
+DIV:
+  label: division
+  case: upper
+EMPTYPE:
+  label: employee_type
+  case: upper
+MGR:
+  label: is_manager
+  case: None
+  normalize:
+    - N:
+      - None
+JOBRESPONSIB:
+  label: job_responsibility
+  case: lower
+EMAILADDRESS:
+  label: notes_address
+  case: None
+INTERNET:
+  label: email_address
+  case: lower
+BLDG:
+  label: building
+  case: upper
+OFFICE:
+  label: office
+  case: upper
+  normalize:
+    - mobile:
+      - home
+    - na:
+      - n/a
+      - unknown
+      - alternate
+WORKLOC:
+  label: work_location
+  case: upper
+COUNTRY:
+  label: country
+  case: upper
+MGRNUM:
+  label: manager_serial_number
+  case: upper
+EMPNUM:
+  label: employee_number
+  case: upper
+WORKPLACEIND:
+  label: workplace_indicator
+  case: upper
+ORGCODE:
+  label: organization_code
+  case: upper
+HRCOUNTRYCODE:
+  label: hr_country_code
+  case: upper
+HREMPLOYEETYPE:
+  label: hr_employee_type
+  case: upper
+HRFIRSTNAME:
+  label: first_name
+  case: None
+HRLASTNAME:
+  label: last_name
+  case: None
+EXISTS:
+  label: exists
+  case: None

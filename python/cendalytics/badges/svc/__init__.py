@@ -1,0 +1,1 @@
+from .badge_analysis_manifest_data import BadgeAnalysisManifestData

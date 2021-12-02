@@ -1,0 +1,2 @@
+from .dbpedia_redirect_extractor import DBPediaRedirectExtractor
+from .dbpedia_redirect_reader import DBPediaRedirectReader

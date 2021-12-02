@@ -1,0 +1,1 @@
+from .badge_analysis_api import call_badge_analysis_api

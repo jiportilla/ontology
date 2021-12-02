@@ -1,0 +1,1 @@
+from .generate_slot_query import GenerateSlotQuery

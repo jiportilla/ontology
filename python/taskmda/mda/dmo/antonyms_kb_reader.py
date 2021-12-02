@@ -1,0 +1,59 @@
+#!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+
+import logging
+import time
+
+import pandas as pd
+
+from base import BaseObject
+
+logger = logging.getLogger(__name__)
+
+
+class AntonymsKbReader(BaseObject):
+    """
+        Created:
+            11-Mar-2017
+            craig.trim@ibm.com
+            *   prior to this was using hard-coded dicts
+    """
+
+    def __init__(self, some_input_file):
+        BaseObject.__init__(self, __name__)
+        self.input_file = some_input_file
+
+    @staticmethod
+    def get_header_row():
+        return [
+            'entity',
+            'opposites']
+
+    @staticmethod
+    def get_data_types():
+        return {
+            'entity': str,
+            'opposites': str}
+
+    def read_csv(self, show_dtypes=False):
+        start = time.time()
+        df = pd.read_csv(
+            self.input_file,
+            delim_whitespace=False,
+            sep='~',
+            error_bad_lines=False,
+            skip_blank_lines=True,
+            skiprows=0,
+            comment='#',
+            encoding='utf-8',
+            names=self.get_header_row(),
+            dtype=self.get_data_types(),
+            na_values=['none'],
+            usecols=self.get_header_row())
+
+        df.fillna(value='', inplace=True)
+
+        end = time.time()
+        logger.info('Read CSV File\n\tpath = {}\n\telapsed-time = {}'.format(self.input_file, (end - start)))
+
+        return df
