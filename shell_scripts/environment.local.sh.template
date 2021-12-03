@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# MONGO_JSON_CREDENTIALS
+export MONGO_JSON_CREDENTIALS='{}'
